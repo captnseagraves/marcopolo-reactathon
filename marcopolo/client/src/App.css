@@ -22,3 +22,21 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+body {
+  display: block;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background: url('./075-epic-poop-pool-720.jpg');
+  background-position: center;
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

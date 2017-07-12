@@ -1,0 +1,94 @@
+rgb(28, 175, 222)
+
+/* navbar */
+.navbar-default {
+  background-image: none;
+    background-color: rgb(28, 175, 222);
+    border-color: rgb(14, 155, 200);
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: black;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: rgb(28, 175, 222);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: black;
+    background-color:black;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: black;
+    background-color: black;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: rgb(28, 175, 222);
+    border-bottom-color: rgb(28, 175, 222);
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: rgb(28, 175, 222);
+    border-bottom-color: rgb(28, 175, 222);
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+    border-color: rgb(28, 175, 222);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: rgb(28, 175, 222);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(28, 175, 222);
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: black;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: rgb(28, 175, 222);
+    }
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+}
+#text-align {
+  float: right;
+}
+#navfix {
+  background-image: none;
+  background-color: rgb(28, 175, 222);
+  border: rgb(28, 175, 222);
+  text-align: center;
+  /*float: left;*/
+}
+
+#brand {
+  font-size: 35px
+}

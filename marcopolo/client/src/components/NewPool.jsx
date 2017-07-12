@@ -5,7 +5,6 @@ class NewPool extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'name-value'
     };
      this.submitForm = this.submitForm.bind(this);
     //this.handleChange = this.handleChange.bind(this);
@@ -13,14 +12,11 @@ class NewPool extends Component {
 
   async submitForm (e){
     e.preventDefault();
-    console.log(this.state);
     let data = {name:this.state.name, description:this.state.description, image:this.state.description}
-
     const response = await fetch('http://localhost:3003', {
       method:'post',
       body: data
     })
-    //const json = response.json()
     console.log(response)
 
   }
@@ -29,6 +25,7 @@ class NewPool extends Component {
     this.setState({[e.target.name]:e.target.value});
     this.setState({[e.target.description]: e.target.value})
     this.setState({[e.target.image]:e.target.value})
+
   }
 
   render() {
