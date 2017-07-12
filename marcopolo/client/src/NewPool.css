@@ -1,7 +1,4 @@
 .poolInput {
-  width: 300px;
+  min-width: 700px;
   color: black;
-}
-body {
-  background: black;
 }
