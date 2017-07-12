@@ -3,17 +3,6 @@ import './App.css';
 import NewPool from './components/NewPool.jsx';
 import Pool from './components/Pool.jsx';
 
-
-// const pool = {
-//     "id": 1,
-//     "name": "Dog Water",
-//     "description": "This Pool is dog friendly!!",
-//     "image": "../images/DogWater.jpg",
-//     "created_at": "2016-06-26T14:26:16.000Z",
-//     "updated_at": "2016-06-26T14:26:16.000Z"
-// }
-
-// let pools = [];
 class App extends Component {
   state = {
     pools: []
@@ -30,9 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <NewPool />
-        {this.state.pools.map((e) => {
-          return <Pool pool={e} key={e.id}/>
-        })}
+        {this.state.pools.map(e => <Pool pool={e} key={e.id}/> )}
       </div>
     );
   }
