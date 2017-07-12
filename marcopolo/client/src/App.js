@@ -3,6 +3,7 @@ import './App.css';
 import NewPool from './components/NewPool.jsx';
 import Pool from './components/Pool.jsx';
 
+
 // const pool = {
 //     "id": 1,
 //     "name": "Dog Water",
@@ -12,26 +13,26 @@ import Pool from './components/Pool.jsx';
 //     "updated_at": "2016-06-26T14:26:16.000Z"
 // }
 
-let pools = [];
+// let pools = [];
 class App extends Component {
-  // state = {
-  //   pools: []
-  // }
+  state = {
+    pools: []
+  }
 
 
   async componentDidMount() {
-    const response = await fetch('http://localhost:3003/')
+    const response = await fetch('http://localhost:3003')
     const json = await response.json()
-    // this.setState({pools: json})
-    pools = json;
+    this.setState({pools: json})
   }
 
   render() {
     return (
       <div className="App">
         <NewPool />
-        <Pool pool={this.pools}/>
-        {pools}
+        {this.state.pools.map((e) => {
+          return <Pool pool={e} key={e.id}/>
+        })}
       </div>
     );
   }
