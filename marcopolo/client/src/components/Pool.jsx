@@ -7,7 +7,7 @@ class Pool extends Component {
         <div className="row">
           <div className="col-md-12">
             <div className="well">
-              {/* <div className="media-left">
+              <div className="media-left">
                 <img className="media-object" src={this.props.pool.image} alt="A pool"/>
               </div>
               <div className="media-body">
@@ -17,7 +17,7 @@ class Pool extends Component {
                 <p className="text-left description">
                   {this.props.pool.description}
                 </p>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
