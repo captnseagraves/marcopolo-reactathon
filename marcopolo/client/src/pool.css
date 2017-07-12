@@ -1,5 +1,6 @@
 .media-object {
   max-width: 350px;
+  min-width: 350px;
 }
 
 [ng-click] {
@@ -27,4 +28,8 @@ main.container {
 
 .description {
   margin-left: 20px;
+}
+
+.poolcont {
+  background: rgba(244,244,244,0.95)
 }
