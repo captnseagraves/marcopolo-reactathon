@@ -35,24 +35,3 @@ class NewPool extends Component {
 
 
 export default NewPool;
-{/* <form className="poolForm" name="poolForm">
-  <label className="row text-left">Pool Name
-    <br/>
-    <input type="text" className="col-xs-12"></input>
-
-  <br/>
-  <label className="row text-left">Pool Location
-    <br/>
-    <input type="text" className="col-xs-12"></input>
-  </label>
-  <br/>
-  <label className="row text-left">Pool Description
-    <br/>
-    <textarea className="col-xs-12"></textarea>
-  </label>
-  <br/>
-  <label className="row text-left">Pool Picture
-    <br/>
-    <input type="text" className="col-xs-12"></input>
-  </label>
-</form> */}
