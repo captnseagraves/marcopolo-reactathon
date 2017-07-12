@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NewPool />
+        <NewPool foo="bar"/>
         {this.state.pools.map(e => <Pool pool={e} key={e.id}/> )}
       </div>
     );
