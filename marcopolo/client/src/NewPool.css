@@ -2,3 +2,16 @@
   min-width: 700px;
   color: black;
 }
+.poolForm {
+  /*height: 700px;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+label {
+  color: black;
+}
+
+#description {
+  text-size: 20px;
+}

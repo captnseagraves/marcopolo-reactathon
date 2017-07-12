@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import NewPool from './components/NewPool.jsx';
 import Pool from './components/Pool.jsx';
+import Navbar from './components/Navbar.jsx';
 
 class App extends Component {
   state = {
     pools: []
   }
-
 
   async componentDidMount() {
     const response = await fetch('http://localhost:3003')
@@ -18,8 +18,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar />
         <NewPool />
-        {this.state.pools.map(e => <Pool pool={e} key={e.id}/> )}
+        <br />
+        <br />
+        { this.state.pools.map(e => <Pool pool={e} key={e.id}/> ) }
       </div>
     );
   }
