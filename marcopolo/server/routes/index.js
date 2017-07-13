@@ -21,7 +21,9 @@ router.post('/', (req, res, next)=>{
   knex('pools')
   .insert(body)
   .returning(['id', 'name', 'description', 'image'])
-  .then(result => {res.send(result)})
+  .then((result)=> {
+    res.send(result)
+  })
 });
 
 // router.patch('$1/:id', (req,res,next)=>{

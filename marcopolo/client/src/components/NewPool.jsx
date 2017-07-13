@@ -6,25 +6,36 @@ class NewPool extends Component {
     super();
     this.state = {
     };
-     this.submitForm = this.submitForm.bind(this);
     //this.handleChange = this.handleChange.bind(this);
   }
 
-  async submitForm (e){
+  submitForm = (e) => {
     e.preventDefault();
-    let data = {name:this.state.name, description:this.state.description, image:this.state.description}
-    const response = await fetch('http://localhost:3003', {
-      method:'post',
+    let data = JSON.stringify(this.state);
+    fetch('http://localhost:3003', {
+      method:'POST',
+      mode:'',
+      type: '',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: data
     })
-    console.log(response)
-
+    .then(result => {
+      return result.json();
+    })
+    .then(json => {
+      console.log(json);
+    })
+    .catch(err => {
+      console.log(err);
+    })
   }
 
   handleChange = (e) => {
     this.setState({[e.target.name]:e.target.value});
-    this.setState({[e.target.description]: e.target.value})
-    this.setState({[e.target.image]:e.target.value})
+    // this.setState({[e.target.description]: e.target.value})
+    // this.setState({[e.target.image]:e.target.value})
 
   }
 
